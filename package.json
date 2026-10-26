@@ -1,0 +1,46 @@
+{
+  "name": "@rodny/facepub",
+  "version": "0.0.1",
+  "description": "The unofficial and powerful Facebook publishing client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "facebook",
+    "automation",
+    "playwright",
+    "scraper",
+    "page-object-model",
+    "groups",
+    "posts"
+  ],
+  "author": "Rodny Estrada",
+  "license": "MIT",
+  "packageManager": "pnpm@10.7.0",
+  "peerDependencies": {
+    "playwright": ">=1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "playwright": "^1.57.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodny/facepub.git"
+  }
+}

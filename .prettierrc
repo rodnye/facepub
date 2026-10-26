@@ -1,0 +1,13 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 120,
+        "proseWrap": "always"
+      }
+    }
+  ]
+}
